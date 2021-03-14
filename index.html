@@ -15,6 +15,11 @@
 			src="https://kit.fontawesome.com/fbadad80a0.js"
 			crossorigin="anonymous"
 		></script>
+		<script
+			type="text/javascript"
+			defer
+			src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+		></script>
 
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="style.css" />
@@ -132,7 +137,7 @@
 				<div class="service services__service-2">
 					<i class="fas fa-tasks"></i>
 					<h3 class="services--title services__service-2--title">
-						Web Development
+						Web Developer
 					</h3>
 					<!-- <p class="services--para services__service-2--para">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
@@ -143,15 +148,12 @@
 				<!-- Service 3 -->
 				<div class="service services__service-3">
 					<i class="fa fa-meetup" aria-hidden="true"></i>
-					<h3 class="services--title services__service-3--title">
-						Speaker
-					</h3>
+					<h3 class="services--title services__service-3--title">Speaker</h3>
 					<!-- <p class="services--para services__service-3--para">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
 						nisi, atque deserunt iste ipsa odit!
 					</p> -->
 				</div>
-
 			</section>
 
 			<!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Skills Section *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-->
@@ -205,12 +207,12 @@
 						<span class="skills__coding--progress__4"></span>
 					</div>
 
-						<h4>NOSQL</h4>
+					<h4>NOSQL</h4>
 					<div class="skills__coding--progress">
 						<span class="skills__coding--progress__5"></span>
 					</div>
 
-						<h4>GIT </h4>
+					<h4>GIT</h4>
 					<div class="skills__coding--progress">
 						<span class="skills__coding--progress__6"></span>
 					</div>
@@ -281,15 +283,23 @@
 			<!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Contact Section *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-->
 			<section id="contact">
 				<form class="contact__form">
-					<input type="text" placeholder="Name" />
-					<input type="email" placeholder="Email" />
-					<input type="text" placeholder="Subject" />
-					<textarea name="message" placeholder="Message"></textarea>
+					<input type="email" class="email-address" placeholder="Email" required />
+					<input type="text" class="email-subject" placeholder="Subject" required/>
+					<textarea
+						name="message"
+						class="email-message"
+						placeholder="Message"
+						required
+					></textarea>
 					<input type="submit" value="Submit" />
 				</form>
 			</section>
 		</main>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+		></script>
 
-		<script src="app.js"></script>
+		<script src="app.js" defer></script>
 	</body>
 </html>
