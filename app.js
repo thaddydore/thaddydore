@@ -32,9 +32,9 @@ function handleSubmit(e) {
   e.preventDefault();
   emailjs.init('user_ve3tnEm07NTG7ofkeRfUf');
 
-  this.subject = subject;
+  this.message_subject = subject;
   this.message = message;
-  this.email = email;
+  this.senders_email = email;
 
 
   emailjs.sendForm('contact_service', 'contact_form', this)
