@@ -9,10 +9,11 @@ let subject = "";
 let email = "";
 let message = "";
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', (e) => {
   hamburgerContainer.classList.toggle('clicked');
   links.forEach(link => link.classList.toggle('fade'));
 });
+
 
 emailField.addEventListener('change', (e) => {
   email += e.target.value;
