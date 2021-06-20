@@ -262,18 +262,15 @@ div.showcase__content {
 
 /*-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-* Work Section *-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-*/
 section#work {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
-	padding: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minMax(40rem, 1fr));
+	justify-items: center;
 	background-color: var(--tertiary-color);
 }
 
 div.work__card {
 	padding: 2rem;
-	flex-basis: 40rem;
-	flex-grow: 1;
+	max-width: 40rem;
 
 	clip-path: polygon(
 		20% 0%,
@@ -285,7 +282,10 @@ div.work__card {
 		0% 80%,
 		0% 20%
 	);
+
+	
 }
+
 
 div.work__card img {
 	height: 100%;
@@ -766,7 +766,8 @@ input[type='submit'] {
 /*-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-* (max-width:1510px) Mark *-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-*/
 @media screen and (min-width: 1510px) {
 	body {
-		width: 1510px;
+		/* width: 1510px; */
+		width: 100%;
 		margin: 0 auto;
 	}
 }
