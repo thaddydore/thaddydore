@@ -5,6 +5,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	outline: 1px solid red;
 }
 
 /******************************************** Utility Components ***************************************/
@@ -199,7 +200,7 @@ div.showcase__content {
 	flex-direction: column;
 	justify-content: space-between;
 
-	animation: hero 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	animation: hero 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
 @keyframes hero {
@@ -209,7 +210,7 @@ div.showcase__content {
 	}
 
 	100% {
-		transform: translateX(0);
+		transform: translateX(0) translateY(-2rem);
 		opacity: 1;
 	}
 }
@@ -263,8 +264,8 @@ div.showcase__content {
 /*-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-* Work Section *-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-*/
 section#work {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minMax(40rem, 1fr));
-	justify-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	justify-content: center;
 	background-color: var(--tertiary-color);
 }
 

@@ -1,6 +1,6 @@
-// const hamburgerContainer = document.querySelector('#header__main-nav');
-// const hamburger = document.querySelector('.header__main-nav--hamburger');
-// const links = document.querySelectorAll('.header__main-nav--links li');
+const hamburgerContainer = document.querySelector('#header__main-nav');
+const hamburger = document.querySelector('.header__main-nav--hamburger');
+const links = document.querySelectorAll('.header__main-nav--links li');
 // const emailField = document.querySelector('.email-address');
 // const subjectField = document.querySelector('.email-subject');
 // const messageField = document.querySelector('.email-message');
@@ -9,10 +9,10 @@
 // let email = "";
 // let message = "";
 
-// hamburger.addEventListener('click', (e) => {
-//   hamburgerContainer.classList.toggle('clicked');
-//   links.forEach(link => link.classList.toggle('fade'));
-// });
+hamburger.addEventListener('click', (e) => {
+  hamburgerContainer.classList.toggle('clicked');
+  links.forEach(link => link.classList.toggle('fade'));
+});
 
 
 // emailField.addEventListener('change', (e) => {
