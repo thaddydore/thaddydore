@@ -711,6 +711,35 @@ input[type='submit'] {
 	cursor: pointer;
 }
 
+.error-message {
+	color: red;
+	padding: 1rem 2rem;
+}
+
+.success-message {
+	color: #28a745;
+	padding: 1rem 2rem;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+	margin: 1rem auto;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-* (max-width:1510px) Mark *-*-*-*-**-*-*-*-**-*-*-*-**-*-*-*-*/
 @media screen and (min-width: 1510px) {
 	body {

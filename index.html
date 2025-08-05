@@ -277,10 +277,12 @@
 
 			<!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Contact Section *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-->
 			<section id="contact">
-				<form class="contact__form" data-netlify="true" name="contact-form">
+				<form class="contact__form"  name="contact-form">
 					<input type="email" class="email-address" placeholder="Email" required />
 					<input type="text" class="email-subject" placeholder="Subject" required />
 					<textarea name="message" class="email-message" placeholder="Message" required></textarea>
+					<div class="error-message"></div>
+					<div class="success-message"></div>
 					<input type="submit" value="Submit" />
 				</form>
 			</section>
@@ -290,11 +292,7 @@
 				
 			</div>
 		</aside>
-		<!-- <script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-			defer
-		></script> -->
+	
 
 		<script src="app.js" defer></script>
 	</body>
