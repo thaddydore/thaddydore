@@ -39,6 +39,8 @@ function handleSubmit(e) {
 		body,
 	};
 
+	activateServer();
+
 	fetch('https://email-j933.onrender.com/api/v1/email', {
 		method: 'POST',
 		headers: {
@@ -62,6 +64,18 @@ function handleSubmit(e) {
 		.finally(() => {
 			submitButton.value = 'Submit';
 			submitButton.disabled = false;
+		});
+}
+
+async function activateServer() {
+	fetch('https://email-j933.onrender.com/api/v1/health', {
+		method: 'GET',
+	})
+		.then(() => {
+			console.log('Server activated successfully!');
+		})
+		.catch(error => {
+			console.error('Failed to activate server:', error);
 		});
 }
 
